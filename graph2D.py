@@ -3,7 +3,7 @@ import pandas as pd
 from dash.dependencies import Input, Output
 
 # Load csv file with pandas
-datas = pd.read_csv('salaries.csv')
+datas = pd.read_csv('house_data.csv')
 
 ## Instantiate Dash
 app = Dash(__name__)
@@ -11,7 +11,7 @@ app = Dash(__name__)
 ## Layout Dashboard Dash
 app.layout = html.Div([
     html.Div([
-        html.H1('Salaries', style={'font-weight': 'bold', 'font-family': 'Montserrat', 'opacity':'0.7'}),
+        html.H1('House Data', style={'font-weight': 'bold', 'font-family': 'Montserrat', 'opacity':'0.7'}),
     ]),
 
     html.Div([
